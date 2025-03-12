@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ImageVideoSliderDemo</string>
+    <string name="image_slider">Image Slider</string>
+    <string name="image_to_video_slider">Image to Video Slider</string>
+</resources>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".VideoImageSliderActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- VideoView in the background -->
+        <androidx.media3.ui.PlayerView
+            android:id="@+id/before_video_player_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:visibility="visible"
+            app:resize_mode="fill" >
+
+            <ImageView
+                android:id="@+id/imageOverlay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:visibility="visible"
+                android:src="@drawable/slider_preview_image" />
+        </androidx.media3.ui.PlayerView>
+
+        <!-- ImageView on top of VideoView -->
+
+        <View
+            android:id="@+id/clippingLine"
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start|center_vertical"
+            android:background="@android:color/white" />
+
+        <ImageView
+            android:id="@+id/imgSeekThumb"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="start|center_vertical"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/round_animated_seek" />
+        <!-- SeekBar at the bottom -->
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:background="@android:color/transparent"
+            android:progressDrawable="@drawable/custom_animated_seek_thumb"
+            android:thumb="@drawable/custom_animated_thumb" />
+
+        <ImageView
+            android:id="@+id/imgBack"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:padding="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_back"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="10dp"
+            />
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
