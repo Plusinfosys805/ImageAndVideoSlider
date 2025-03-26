@@ -11,10 +11,15 @@ This Android application provides interactive sliders for comparing images and v
    One side plays a video, while the other side displays an image.
    Users can slide between the video and image to compare changes dynamically.
    Useful for showcasing video effects, transformations, or before-after comparisons involving motion.
+   
    Features
+   
    ✅ Interactive slider for smooth transition.
+   
    ✅ Supports both image-image and video-image comparison.
+   
    ✅ Optimized for performance and smooth UI experience.
+   
 
 This project is open-source and can be used for image processing apps, video comparison tools, and more! 🚀
 
